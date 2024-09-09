@@ -34,7 +34,7 @@ class GifServiceServer {
 }
 
 module.exports.newGrpcServer = async (grpcServer, gif) => {
-  const PROTO_PATH = path.join(__dirname + '../../../proto/Gif.proto');
+  const PROTO_PATH = path.join(__dirname + '../proto/Gif.proto');
 
   let descriptor = await protoLoader.load(
     PROTO_PATH,
