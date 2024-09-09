@@ -23,6 +23,6 @@ message FindByShortcodeResponse {
 }
 
 service GifService {
-    rpc CollectAll (ListAllGifRequest) returns (ListAllGifResponse);
+    rpc GatherAll (ListAllGifRequest) returns (ListAllGifResponse);
     rpc FindByShortcode (FindByShortcodeRequest) returns (FindByShortcodeResponse);
 }

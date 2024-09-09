@@ -19,7 +19,7 @@ class GifServiceServer {
   mapRPC() {
     let implementations = {};
 
-    implementations.CollectAll = (call, callback) => {
+    implementations.GatherAll = (call, callback) => {
       let results = { list: this.getList() };
       callback(null, results);
     };
