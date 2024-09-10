@@ -7,12 +7,13 @@ build:
     push: false
     useDockerCLI: true
   artifacts:
-    - image: nodevoto
+    - image: nodevoto-gif
       docker:
         dockerfile: Dockerfile
       sync:
         infer:
           - '**/*.js'
+          - '**/*.proto'
 manifests:
   rawYaml:
     - k8s/deployment.yml
